@@ -1,0 +1,14 @@
+<h1> Companies </h1>
+
+<% companies = Company.all %>
+
+<p> There are <%= companies.count %> companies </p>
+
+<ul>
+  <% for company in companies %>
+    <li> <%= company["name"] %> </li>
+    <% end %>
+</ul>
+
+# data-base backed webapp!
+# https://3000-suevinchoikellog-webapp-3n59t0meuze.ws-us108.gitpod.io/companies
